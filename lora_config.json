@@ -1,0 +1,18 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "train": true,
+  "data": "mlx_training_data",
+  "adapter_path": "models/mistral-netflow",
+  "batch_size": 2,
+  "learning_rate": 5e-05,
+  "iters": 1000,
+  "val_batches": 25,
+  "steps_per_report": 10,
+  "steps_per_eval": 100,
+  "save_every": 500,
+  "max_seq_length": 1024,
+  "grad_checkpoint": true,
+  "seed": 42,
+  "fine_tune_type": "lora",
+  "optimizer": "adamw"
+}
